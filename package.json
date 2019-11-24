@@ -1,0 +1,36 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack --mode=production",
+    "dev": "webpack-dev-server --mode=development",
+    "tsc": "tsc --noEmit",
+    "tsc:w": "yarn tsc --watch",
+    "watch": "babel --watch src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "yarn build:js && yarn build:types && yarn fix && webpack --mode=production",
+    "lint": "eslint \"./**/*.js\" --fix",
+    "prettier": "prettier \"./**/*.{js,ts,html,css}\" --write",
+    "fix": "yarn lint && yarn prettier"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.7.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {}
+}

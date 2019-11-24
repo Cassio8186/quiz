@@ -1,0 +1,23 @@
+{
+	"env": {
+		"commonjs": true,
+		"es6": true,
+		"browser": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": "eslint:recommended",
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"rules": {
+		"for-direction": "error",
+		"no-unused-vars": "warn",
+		"no-unused-expressions": "warn",
+		"no-unused-labels": "warn"
+	}
+}
