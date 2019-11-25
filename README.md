@@ -5,7 +5,7 @@ Small object oriented typescript project.
 ## To run the project
 
 - Install packages: `yarn install`
-- Run API:
+- Run Project:
   - in one terminal start the babel:  
     `yarn watch`
   - in other terminal start the webpack:  
