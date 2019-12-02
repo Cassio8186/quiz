@@ -18,7 +18,12 @@ const pergunta3 = new Pergunta(
 );
 const pergunta4 = new Pergunta(
 	"Quem quer tirar férias?\n",
-	["0) ninguém\n", "1) nenhum\n", "2) todos os alunos da facul\n", "3) O Jhony\n"],
+	[
+		"0) ninguém\n",
+		"1) nenhum\n",
+		"2) todos os alunos da facul\n",
+		"3) O Jhony\n"
+	],
 	2
 );
 
