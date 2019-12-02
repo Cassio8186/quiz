@@ -8,7 +8,7 @@ export class Pergunta {
 		this.correta = correta;
 	}
 	perguntar(): string {
-		return `${this.pergunta}, escolha uma das alternativas ${this.alternativas}`;
+		return `${this.pergunta}\n escolha uma das alternativas:\n${this.alternativas}`;
 	}
 	/**
 	 *
